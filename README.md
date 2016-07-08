@@ -10,7 +10,7 @@ If you want to be the greatest master of Pokemon, you gotta catch 'em all. There
 #### Screenshots
 
 <p align="center">
-  <img src="screenie.jpg">
+  <img src="screenie.png">
 </p>
 
 #### Features
