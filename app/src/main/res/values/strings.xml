@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Pokémon to Catch</string>
-    <string name="dialog_title">New Group</string>
-    <string name="positive">OK</string>
-    <string name="negative">Cancel</string>
+    <string name="app_name">Pokemon List</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_to_catch_apokemon">ToCatchAPokemon</string>
 </resources>
