@@ -17,7 +17,6 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,11 +40,18 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager =
                     new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+<<<<<<< HEAD
         mRecyclerview.setLayoutManager(linearLayoutManager);
 
         adapter = new PokeListAdapter(pokeGroup.mPokeList);
         mRecyclerview.setAdapter(adapter);
 
+=======
+
+        adapter = new PokeListAdapter(pokeGroup.mPokeList);
+        mRecyclerview.setLayoutManager(linearLayoutManager);
+
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
 
 
        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -83,10 +89,17 @@ public class MainActivity extends AppCompatActivity {
 
 //Dialog Box Function
     private AlertDialog dialog(){
+<<<<<<< HEAD
 
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         LayoutInflater inflater = MainActivity.this.getLayoutInflater();
 
+=======
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        LayoutInflater inflater = MainActivity.this.getLayoutInflater();
+
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
         final View v = inflater.inflate(R.layout.dialog, null);
         final EditText editName = (EditText) v.findViewById(R.id.editName);
 
@@ -127,6 +140,5 @@ public class MainActivity extends AppCompatActivity {
     private void newPokeList(PokeList list){
         pokeGroup.mPokeList.add(list);
     }
-
 }
 

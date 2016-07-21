@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Pokemon List</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_main">Pokemon Lists</string>
     <string name="title_activity_to_catch_apokemon">Pokemon in List</string>
+=======
+    <string name="title_activity_to_catch_apokemon">ToCatchAPokemon</string>
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
 </resources>

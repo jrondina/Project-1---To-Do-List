@@ -13,7 +13,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
 public class ToCatchAPokemon extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
@@ -32,6 +35,10 @@ public class ToCatchAPokemon extends AppCompatActivity {
         mRecyclerView.setLayoutManager(layoutManager);
 
         int index = getIntent().getIntExtra("listPosition", 0);
+<<<<<<< HEAD
+=======
+        String name = getIntent().getStringExtra("name");
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
         mPokeList = PokeGroup.getGroup().mPokeList.get(index);
 
         adapter = new PokemonAdapter(mPokeList.getmPokeList());
@@ -59,6 +66,10 @@ public class ToCatchAPokemon extends AppCompatActivity {
                 .setPositiveButton("ADD", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+<<<<<<< HEAD
+=======
+                        //code for adding to ToDoList
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
                         String pokeName = editName.getText().toString();
                         String pokeDesc = editDesc.getText().toString();
                         if (pokeName.length() == 0){
@@ -69,7 +80,11 @@ public class ToCatchAPokemon extends AppCompatActivity {
                         else {
                             Pokemon pokemon = new Pokemon(pokeName, pokeDesc);
                             addPokemon(pokemon);
+<<<<<<< HEAD
                             adapter.notifyDataSetChanged();
+=======
+                            adapter.notifyDataSetChanged(); //why is this not working
+>>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
                         }
                     }
                 })
