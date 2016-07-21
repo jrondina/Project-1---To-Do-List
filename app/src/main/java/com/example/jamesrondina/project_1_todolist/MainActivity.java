@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager =
                     new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        mRecyclerview.setLayoutManager(linearLayoutManager);
 
         adapter = new PokeListAdapter(pokeGroup.mPokeList);
-        mRecyclerview.setLayoutManager(linearLayoutManager);
+        mRecyclerview.setAdapter(adapter);
 
 
 
@@ -125,5 +127,6 @@ public class MainActivity extends AppCompatActivity {
     private void newPokeList(PokeList list){
         pokeGroup.mPokeList.add(list);
     }
+
 }
 

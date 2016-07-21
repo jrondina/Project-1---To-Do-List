@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class ToCatchAPokemon extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
@@ -31,7 +32,6 @@ public class ToCatchAPokemon extends AppCompatActivity {
         mRecyclerView.setLayoutManager(layoutManager);
 
         int index = getIntent().getIntExtra("listPosition", 0);
-        String name = getIntent().getStringExtra("name");
         mPokeList = PokeGroup.getGroup().mPokeList.get(index);
 
         adapter = new PokemonAdapter(mPokeList.getmPokeList());
@@ -59,7 +59,6 @@ public class ToCatchAPokemon extends AppCompatActivity {
                 .setPositiveButton("ADD", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        //code for adding to ToDoList
                         String pokeName = editName.getText().toString();
                         String pokeDesc = editDesc.getText().toString();
                         if (pokeName.length() == 0){
@@ -70,7 +69,7 @@ public class ToCatchAPokemon extends AppCompatActivity {
                         else {
                             Pokemon pokemon = new Pokemon(pokeName, pokeDesc);
                             addPokemon(pokemon);
-                            adapter.notifyDataSetChanged(); //why is this not working
+                            adapter.notifyDataSetChanged();
                         }
                     }
                 })

@@ -25,18 +25,23 @@ public class PokeListAdapter extends RecyclerView.Adapter<PokeListHolder>{
     @Override
     public PokeListHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View parentView = inflater.inflate(R.layout.custom, parent, false);
+        //LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        //View parentView = inflater.inflate(R.layout.custom, parent, false);
 
-        PokeListHolder pokeHolder = new PokeListHolder(parentView);
+        View parentView = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom,
+                parent, false);
 
-        return pokeHolder;
+
+        PokeListHolder pokeListHolder = new PokeListHolder(parentView);
+
+        return pokeListHolder;
     }
 
     @Override
-    public void onBindViewHolder(PokeListHolder holder, final int position) {
+    public void onBindViewHolder(PokeListHolder holder, int position) {
 
-        final PokeList pokeList = mPokeLists.get(position);
+        final int pos = position;
+        final PokeList pokeList = mPokeLists.get(pos);
 
         holder.mNameView.setText(pokeList.getmName());
 
@@ -45,8 +50,8 @@ public class PokeListAdapter extends RecyclerView.Adapter<PokeListHolder>{
             public void onClick(View view) {
 
                 Intent intent = new Intent(view.getContext(), ToCatchAPokemon.class);
-                intent.putExtra("listPosition", position);
-                intent.putExtra("Name", PokeList.getmName());
+                intent.putExtra("listPosition", pos);
+                intent.putExtra("Name", pokeList.getmName());
                 view.getContext().startActivity(intent);
 
             }
@@ -85,7 +90,7 @@ public class PokeListAdapter extends RecyclerView.Adapter<PokeListHolder>{
                             notifyDataSetChanged();
                         }
                         else {
-                            Toast.makeText(dialogView.getRootView().getContext(), "Please Enter a Name", Toast.LENGTH_SHORT);
+                            Toast.makeText(dialogView.getRootView().getContext(), "Please Enter a Name", Toast.LENGTH_SHORT).show();
                         }
                     }
                 })

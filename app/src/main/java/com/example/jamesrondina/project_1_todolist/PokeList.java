@@ -7,11 +7,11 @@ import java.util.List;
  * Created by jamesrondina on 7/18/16.
  */
 public class PokeList {
-    static String mName;
+    private String mName;
     List<Pokemon> mPokeList;
 
     public PokeList(String mName) {
-        this.mName = "PokemonName";
+        this.mName = mName;
         this.mPokeList = new LinkedList<>();
     }
 
@@ -20,7 +20,7 @@ public class PokeList {
         this.mPokeList = mPokeList;
     }
 
-    public static String getmName() {
+    public String getmName() {
 
         return mName;
     }

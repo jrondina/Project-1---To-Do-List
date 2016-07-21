@@ -18,9 +18,11 @@ public class PokeGroup {
 
     private PokeGroup() {
         mPokeList = new LinkedList<>();
+
+
     }
     
-    public List<Pokemon> newPokemon(int i){
+    public List<Pokemon> getPokemon(int i){
         return mPokeList.get(i).getmPokeList();
     }
 
