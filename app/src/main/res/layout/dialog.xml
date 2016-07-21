@@ -3,11 +3,19 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name of Pokemon List"
+        android:id="@+id/textView"
+        android:padding="10dp" />
+
     <EditText
-        android:id="@+id/titledialog"
+        android:id="@+id/editName"
+        android:hint="What group of Pokemon are these?"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:hint="Title"/>
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
 </LinearLayout>
