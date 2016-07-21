@@ -1,31 +1,15 @@
 package com.example.jamesrondina.project_1_todolist;
 
-<<<<<<< HEAD
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
-=======
-<<<<<<< HEAD
-import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
-=======
->>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-<<<<<<< HEAD
 import android.widget.EditText;
 import android.widget.Toast;
-=======
-<<<<<<< HEAD
-import android.widget.EditText;
-import android.widget.Toast;
-=======
->>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
 
 import java.util.List;
 
@@ -63,24 +47,12 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonHolder> {
 
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-<<<<<<< HEAD
                     boolean checked = !pokemon.ismCaught();
-=======
-<<<<<<< HEAD
-                    boolean checked = !pokemon.ismCaught();
-=======
-                    boolean checked = pokemon.ismCaught();
->>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
                     CheckBox checkBox = (CheckBox) compoundButton;
                     checkBox.setChecked(checked);
                     pokemon.setmCaught(checked);
                 }
         });
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
 
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -138,12 +110,6 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonHolder> {
                     }
                 });
         return builder.create();
-<<<<<<< HEAD
-=======
-=======
-        //TODO: onLongClickListener
->>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
     }
 
     @Override
@@ -151,12 +117,4 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonHolder> {
         return mPokemons.size();
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    //TODO: Dialog
-
->>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
 }

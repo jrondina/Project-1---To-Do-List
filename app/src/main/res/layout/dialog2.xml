@@ -3,19 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView" />
-
->>>>>>> 4756fc949a36319e8f9c1f6501f61f4de5b14edc
->>>>>>> 36cb90f4b16b9f36cf992b763218b3cc8d370904
     <EditText
         android:id="@+id/editName"
         android:hint="Enter Name"
